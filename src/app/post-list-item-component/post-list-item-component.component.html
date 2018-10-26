@@ -1,0 +1,7 @@
+<li [ngClass]="{'list-group-item': true,'list-group-item-success': childPostLoveIts >0,'list-group-item-danger': childPostLoveIts <= 0}" style="margin-bottom:15px;">
+  <h4>{{childPostTitle}}</h4>
+  <p>{{childPostContent}}</p>
+  <p>Mis a jour le {{childPostCreated_at | date:'short'}}</p>
+  <button class="btn btn-success" style="margin-right:10px;" (click)="onLike()">Love it!</button>
+  <button class="btn btn-danger" (click)="onDislike()">Don't love it</button>
+</li>
